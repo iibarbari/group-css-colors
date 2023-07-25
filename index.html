@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Colors</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <main>
+
+        <dialog open style="min-width: 280px; border-radius: 16px;">
+            <table id="color-values" style="min-width: 100%; margin-bottom: 1rem;  border-collapse: collapse;">
+                <caption style="margin-bottom: 0.5rem; text-align: start;">
+                    Current color values:
+                </caption>
+
+                <tbody>
+                    <tr id="RGB" style="border: 1px solid;">
+                        <th width="20%" style="background-color: gainsboro;">RGB</th>
+                        <td style="padding-inline: 0.5rem;">rgb(255 255 255)</td>
+                    </tr>
+
+                    <tr id="HEX" style="border: 1px solid;">
+                        <th width="20%" style="background-color: gainsboro;">HEX</th>
+                        <td style="padding-inline: 0.5rem;">#ffffff</td>
+                    </tr>
+
+                    <tr id="HSL" style="border: 1px solid;">
+                        <th width="20%" style="background-color: gainsboro;">HSL</th>
+                        <td style="padding-inline: 0.5rem;">hsl(0 0 100)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <table id="calculated-color" style="min-width: 100%; margin-bottom: 1rem;  border-collapse: collapse;">
+                <caption style="margin-bottom: 0.5rem; text-align: start;">
+                    Group color
+                </caption>
+
+                <tbody>
+                    <tr id="RGB" style="border: 1px solid;">
+                        <th width="20%" style="background-color: gainsboro;">RGB</th>
+                        <td style="padding-inline: 0.5rem;">rgb(255 255 255)</td>
+                    </tr>
+
+                    <tr id="HEX" style="border: 1px solid;">
+                        <th width="20%" style="background-color: gainsboro;">HEX</th>
+                        <td style="padding-inline: 0.5rem;">#ffffff</td>
+                    </tr>
+
+                    <tr id="HSL" style="border: 1px solid;">
+                        <th width="20%" style="background-color: gainsboro;">HSL</th>
+                        <td style="padding-inline: 0.5rem;">hsl(0 0 100)</td>
+                    </tr>
+
+                    <tr id="NAME" style="border: 1px solid;">
+                        <th width="20%" style="background-color: gainsboro;">Name</th>
+                        <td style="padding-inline: 0.5rem;">white</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="display: flex; align-items: center; justify-content: center; gap:0.25rem;">
+                <input type="color" name="color" id="select-color" value="#ffffff" />
+                <label for="select-color">Select a color</label>
+            </div>
+        </dialog>
+    </main>
+
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>
